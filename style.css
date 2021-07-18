@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'TT Norms';
+    src: url('fonts/TTNorms-font/TTNorms-Bold.eot');
+    src: url('fonts/TTNorms-font/TTNorms-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTNorms-font/TTNorms-Bold.woff2') format('woff2'),
+        url('fonts/TTNorms-font/TTNorms-Bold.woff') format('woff'),
+        url('fonts/TTNorms-font/TTNorms-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url('fonts/TTNorms-font/TTNorms-Medium.eot');
+  src: url('fonts/TTNorms-font/TTNorms-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/TTNorms-font/TTNorms-Medium.woff2') format('woff2'),
+      url('fonts/TTNorms-font/TTNorms-Medium.woff') format('woff'),
+      url('fonts/TTNorms-font/TTNorms-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "TT Norms";
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper {  
+  width: 1920px;
+  height: 1080px;
+  background-color: rosybrown ;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.menu_wrap {
+  width: 290px;
+  height: 100%;
+  background-color: rgb(103, 103, 158);
+}
+
+.top_menu {
+  position: relative;
+  width: 242px;
+  height: 960px;
+  margin-top: 80px;
+  background-color: #fff;
+}
+
+.user_photo {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  left: 97px;  
+}
+
+.img_photo {
+  border: 5px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+
+.user_name {
+  position: absolute;
+  width: 195px;
+  height: 22px;
+  left: 47px;
+  top: 113px;
+  
+}
+
+.users_name {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #0D1C2E;
+}
+
+.chevron-down {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: calc(50% - 19px + 195px/2);
+  top: calc(50% - 19px + 22px/2);
+}
+
+.log_out {
+  position: absolute;
+  width: 154px;
+  height: 40px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.icon_power {
+  color: #707C97;
+}
+
+.log_out__title {
+  color: #707C97;
+}
+
+.chat_wrap {
+  width: 1630px;
+  height: 100%;
+  background-color: rgb(177, 196, 125);
+}
+
