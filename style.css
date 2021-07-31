@@ -27,7 +27,8 @@ body {
 }
 
 ul[class],
-ol[class] {
+ol[class],
+li[class] {
   padding: 0;
   list-style: none;
 }
@@ -35,7 +36,6 @@ ol[class] {
 .wrapper {  
   width: 1920px;
   height: 1080px;
-  background-color: rosybrown ;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -44,7 +44,6 @@ ol[class] {
 .menu_wrap {
   width: 290px;
   height: 100%;
-  background-color: rgb(103, 103, 158);
 }
 
 .top_menu {
@@ -55,7 +54,7 @@ ol[class] {
   background-color: #fff;
 }
 
-.user_photo {
+.menu__user_photo {
   position: absolute;
   width: 96px;
   height: 96px;
@@ -68,22 +67,20 @@ ol[class] {
   border-radius: 100px;
 }
 
-.user_name {
+.menu__user_name {
   position: absolute;
   width: 195px;
   height: 22px;
   left: 47px;
-  top: 113px;
-  
+  top: 113px;  
 }
 
-.users_name {
+.user_name {
   margin: 0;
   font-size: 18px;
   line-height: 21px;
-  align-items: center;
-  text-align: center;
   color: #0D1C2E;
+  font-weight: 500;
 }
 
 .chevron-down {
@@ -94,20 +91,159 @@ ol[class] {
   top: calc(50% - 19px + 22px/2);
 }
 
-.log_out {
-  position: absolute;
-  width: 154px;
-  height: 40px;
-  left: 0px;
+.menu_items {
+  height: 750px;
+  width: 100%;
+  left: 38px;
   bottom: 0px;
+  position: absolute;
+}
+
+.items {
+  height: 100%;
+  margin: 0;
+}
+
+.menu_item {
+  text-decoration: none; 
+  cursor: pointer;
+}
+
+.item {
+  max-width: 90%;
+  height: 40px;
+  left: 38px;
+  margin-bottom: 35px;
+}
+
+.item:last-child {
+  margin-top: 295px;
+}
+
+.item_title { 
+  vertical-align: 8px;
+  height: 40px;
+  bottom: 8px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #707C97;
+}
+
+.item_icon {
+  margin-top: 8px;
+  margin-right: 14px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;  
+  background-color: #707C97;   
+}
+
+.icon_home {
+  -webkit-mask-image: url('/img/icons/home.svg');
+  mask-image: url('/img/icons/home.svg');
+}
+
+.icon_chat {
+  -webkit-mask-image: url('/img/icons/chat.svg');
+  mask-image: url('/img/icons/chat.svg');  
+  z-index: 1;
+}
+
+.icon_contact {
+  -webkit-mask-image: url('/img/icons/contact.svg');
+  mask-image: url('/img/icons/contact.svg');
+}
+
+.icon_noti {
+  -webkit-mask-image: url('/img/icons/noti.svg');
+  mask-image: url('/img/icons/noti.svg');
+}
+
+.icon_calendar {
+  -webkit-mask-image: url('/img/icons/calendar.svg');
+  mask-image: url('/img/icons/calendar.svg');
+}
+
+.icon_settings {
+  -webkit-mask-image: url('/img/icons/settings.svg');
+  mask-image: url('/img/icons/settings.svg');
 }
 
 .icon_power {
-  color: #707C97;
+  -webkit-mask-image: url('/img/icons/power.svg');
+  mask-image: url('/img/icons/power.svg');
 }
 
-.log_out__title {
-  color: #707C97;
+.item_icon:active, .item_icon__active {
+  background-color: #2A8BF2;
+}
+
+.item_title:active, .item_title__active {
+  color: #2A8BF2;
+}
+
+.rectangle {
+  position: absolute;
+  margin-left: -38px;
+  width: 3px;
+  height: 40px;
+  background: #2A8BF2;
+  box-shadow: 1px 0px 10px rgba(42, 139, 242, 0.45), 0px 0px 10px rgba(42, 139, 242, 0.55), 4px 0px 25px rgba(42, 139, 242, 0.75);
+  border-radius: 3px;
+}
+
+.elli {
+  width: 24px;
+  height: 24px; 
+}
+
+.ellipse_one {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  left: 29%;
+  top: 46%;
+  z-index: 10;
+  
+  position: relative;
+
+  background: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.03);
+}
+
+.ellipse_two {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  left: 46%;
+  top: 46%;
+  z-index: 10;
+
+  background: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.03);
+}
+
+.ellipse_thr {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  left: 63%;
+  top: 46%;
+  z-index: 10;
+
+  background: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.03); 
+}
+
+.ellipse_one:active, .ellipse_two:active, .ellipse_thr:active,
+.ellipse_one:focus, .ellipse_two:focus, .ellipse_thr:focus {
+  /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.03); */
+  background:  #2A8BF2;
 }
 
 .chat_wrap {
