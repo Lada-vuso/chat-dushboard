@@ -41,9 +41,12 @@ li[class] {
   justify-content: flex-start;
 }
 
+/* start top menu */
+
 .menu_wrap {
   width: 290px;
   height: 100%;
+  background-color: #FFFFFF;
 }
 
 .top_menu {
@@ -51,7 +54,6 @@ li[class] {
   width: 242px;
   height: 960px;
   margin-top: 80px;
-  background-color: #fff;
 }
 
 .menu__user_photo {
@@ -83,7 +85,7 @@ li[class] {
   font-weight: 500;
 }
 
-.chevron-down {
+.chevron-down__user_name {
   position: absolute;
   width: 19px;
   height: 19px;
@@ -246,9 +248,108 @@ li[class] {
   background:  #2A8BF2;
 }
 
+/* end top menu */
+
+/* start all chats */
+
 .chat_wrap {
+  position: relative;
   width: 1630px;
-  height: 100%;
-  background-color: rgb(177, 196, 125);
+  height: 100%;  
+  background: linear-gradient(180deg, #F3F3FB 0%, #FDFBFD 100%);
+}
+
+.all_chats {
+  position: absolute;
+  width: 597px;
+  height: 1127px;
+  top: 109px;
+  left: 59px;
+  background-color: rgb(161, 226, 233);
+}
+
+.title_chats {
+  position: absolute;
+  width: 581px;
+  height: 67px;
+  background-color: rgb(183, 203, 241);
+}
+
+.title_chats > p {
+  position: absolute;
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 26px;
+  
+/* identical to box height, or 72% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #0D1C2E;
+}
+
+.title_filter {
+  position: absolute;
+  margin-top: 42px;
+
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+
+  color: #707C97;
+}
+
+.chevron-down__title_filter {
+  -webkit-mask-image: url('./img/icons/chevron-down.svg');
+  mask-image: url('./img/icons/chevron-down.svg');
+
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: calc(110px + 16px/2);
+  top: 48px;
+
+  background-color: #707C97; 
+}
+
+.button_create {
+  position: absolute;
+  width: 240px;
+  height: 60px;
+  left: 341px;
+  top: 1px;
+
+  display: flex;
+  align-items: center;
+  /* vertical-align: middle; */
+  text-align: center;
+
+  background: linear-gradient(92.68deg, #7CB8F7 0%, #2A8BF2 100%);
+  box-shadow: 6px 6px 25px rgba(42, 139, 242, 0.15), 4px 4px 25px rgba(42, 139, 242, 0.05), 10px 6px 25px rgba(42, 139, 242, 0.15);
+  border-radius: 6px;
+  border: none;
+
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.icon_plus {
+  position: absolute;
+  margin-right: 7px;
+}
+
+.text__button_create {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
 }
 
